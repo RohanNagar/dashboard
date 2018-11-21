@@ -1,0 +1,30 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "description": "The all-in-one personal information dashboard",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohanNagar/dashboard.git"
+  },
+  "keywords": [
+    "dashboard",
+    "macos",
+    "windows",
+    "electron",
+    "personal"
+  ],
+  "author": "Rohan Nagar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RohanNagar/dashboard/issues"
+  },
+  "homepage": "https://github.com/RohanNagar/dashboard#readme",
+  "devDependencies": {
+    "electron": "^3.0.10"
+  }
+}
