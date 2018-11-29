@@ -1,0 +1,10 @@
+{
+  "ynab": {
+    "accessToken": "ACCESS_TOKEN",
+    "budgetId": "3BUDGET_ID"
+  },
+  "sunrise-sunset": {
+    "latitude": 40.7308619,
+    "longitude": -73.9871558
+  }
+}

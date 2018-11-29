@@ -26,5 +26,8 @@
   "homepage": "https://github.com/RohanNagar/dashboard#readme",
   "devDependencies": {
     "electron": "^3.0.10"
+  },
+  "dependencies": {
+    "ynab": "^1.9.0"
   }
 }

@@ -1,0 +1,161 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .65rem;
+    margin-bottom: 8px;
+}
+
+.card-dark, .card-dark .card-title, .card-dark .btn-like {
+    color: #fff
+}
+
+.card-body {
+    padding: 1rem .9375rem;
+    font-size: 12px
+}
+
+@media(min-width:768px) {
+    .card-body {
+        padding: 1rem 1.25rem;
+        font-size: 13px
+    }
+}
+
+@media(min-width:992px) {
+    .card-body {
+        font-size: 14px
+    }
+}
+
+.card-summary {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.card-title {
+    letter-spacing: -.5px;
+    text-transform: capitalize
+}
+
+.card-header {
+    padding: 1.125rem .9375rem 0;
+    margin-bottom: 0
+}
+
+@media(min-width:768px) {
+    .card-header {
+        padding: 1.125rem 1.25rem 0
+    }
+}
+
+.card-bg-purple {
+    background: linear-gradient(to bottom right, #af4eff, #5914f5)
+}
+
+.card-bg-blue {
+    background: linear-gradient(to bottom right, #2e88ff, #5315de)
+}
+
+.card-bg-pink {
+    background: linear-gradient(to bottom right, #e12baa, #bb0334)
+}
+
+.card-bg-green {
+    background: linear-gradient(to bottom right, #03c35c, #009498)
+}
+
+.card-bg-red {
+    background: linear-gradient(to bottom right, #f32a36, #bb0469)
+}
+
+.card-bg-orange {
+    background: linear-gradient(to bottom right, #ff7e1d, #dd1648)
+}
+
+.card-bg-yellow {
+    background: linear-gradient(to bottom right, #E48300, #F1BF00)
+}
+
+.card-bg-gray {
+    background: linear-gradient(to bottom right, #97989b, #656669)
+}
+
+.card-bg-darkGray {
+    background: linear-gradient(to bottom right, #656669, #444548)
+}
+
+.card-bg-lightBlue {
+    background: linear-gradient(to bottom right, #61B3F5, #0078DF)
+}
+
+.card-shortcut {
+    height: 100%;
+    box-shadow: 0 8px 20px -10px transparent;
+    text-shadow: 1px 1px rgba(0, 0, 0, .05);
+    cursor: pointer;
+    transition: all .2s cubic-bezier(.68, -.6, .265, 2.2)
+}
+
+.card-shortcut .card-summary {
+    padding: 0
+}
+
+.card-shortcut:focus, .card-shortcut:focus:hover, .card-shortcut:active,
+.card-shortcut:active:hover {
+    box-shadow: 0 8px 20px -8px rgba(0, 0, 0, .26);
+    color: #fff;
+    outline: none;
+    text-decoration: none !important;
+    transform: scale(.956)
+}
+
+.card-shortcut:focus .card-download, .card-shortcut:focus:hover .card-download,
+.card-shortcut:active .card-download, .card-shortcut:active:hover .card-download {
+    opacity: 1;
+    visibility: visible
+}
+
+.card-shortcut:focus .card-download path, .card-shortcut:focus:hover .card-download path,
+.card-shortcut:active .card-download path, .card-shortcut:active:hover .card-download path {
+    opacity: 1;
+    transform: translateY(0) scale(1)
+}
+
+.card-shortcut:hover {
+    box-shadow: 0 20px 56px -12px rgba(0, 0, 0, .26);
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.044)
+}
+
+.card-shortcut:hover .card-download {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1)
+}
+
+.card-shortcut:hover .card-download path {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.card-shortcut .card-download {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.75);
+    transition: all .2s ease-in-out;
+    transition-delay: .2s
+}
+
+.card-shortcut .card-download path {
+    fill: #fff;
+    opacity: 0;
+    transform: translateY(-14px);
+    transition: all .2s ease-in-out;
+    transition-delay: .2s
+}
