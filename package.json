@@ -28,6 +28,7 @@
     "electron": "^3.0.10"
   },
   "dependencies": {
+    "request": "^2.88.0",
     "ynab": "^1.9.0"
   }
 }

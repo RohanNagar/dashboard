@@ -1,5 +1,4 @@
 const ynab = require("ynab");
-const config = require("./config.json");
 
 const ynabAPI = new ynab.API(config.ynab.accessToken);
 
