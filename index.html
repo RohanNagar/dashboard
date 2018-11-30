@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Dashboard</title>
-  <meta name="description" content="">
+  <meta name="description" content="The all-in-one personal information dashboard">
   <meta name="author" content="Rohan Nagar">
 
   <!-- Mobile Specific Metas
@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="./services/services.js"></script>
@@ -38,16 +40,16 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
+    <div class="row" style="-webkit-app-region: drag">
       <div class="one-half column">
-        <h4>Dashboard</h4>
+        <h2 class="title">Dashboard</h2>
       </div>
     </div>
 
     <div class="row">
       <div class="twelve columns card card-shortcut card-dark card-bg-yellow">
         <div class="row card-header">
-          <div class="card-title">Sunrise & Sunset</div>
+          <h5 class="card-title">Sunrise & Sunset</h5>
         </div>
 
         <div class="row card-body">
@@ -64,7 +66,7 @@
     <div class="row">
       <div class="twelve columns card card-shortcut card-dark card-bg-green">
         <div class="row card-header">
-          <div class="card-title">YNAB Account Balances</div>
+          <h5 class="card-title">YNAB Account Balances</h5>
         </div>
 
         <div class="row card-body">
@@ -81,7 +83,7 @@
     <div class="row">
       <div class="twelve columns card card-shortcut card-dark card-bg-red">
         <div class="row card-header">
-          <div class="card-title">Todoist</div>
+          <h5 class="card-title">Todoist</h5>
         </div>
 
         <div class="row card-body">
