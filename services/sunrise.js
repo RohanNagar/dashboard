@@ -12,14 +12,12 @@ const url = util.format(
 
 async function update() {
   request.get(url, (error, response, body) => {
-    let json = JSON.parse(body);
+    let data = JSON.parse(body).results;
 
-    console.log(json);
+    let sunrise = new Date(data.sunrise);
+    let sunset = new Date(data.sunset);
 
-    let sunriseUtc = new Date(json.results.sunrise);
-    let sunsetUtc = new Date(json.results.sunset);
-
-    $(`#sunrise`).text('Sunrise: ' + sunriseUtc.toLocaleTimeString());
-    $(`#sunset`).text('Sunset: ' + sunsetUtc.toLocaleTimeString());
+    $(`#sunrise`).text('Sunrise: ' + sunrise.toLocaleTimeString());
+    $(`#sunset`).text('Sunset: ' + sunset.toLocaleTimeString());
   });
 }
